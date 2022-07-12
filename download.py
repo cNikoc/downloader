@@ -3,7 +3,7 @@ import pytube
 
 app = Flask(__name__)
 
-@app.route('/downloader/')
+@app.route('/')
 def home(): 
     return render_template('index.html')
 
