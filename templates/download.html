@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/download.css') }}">
+        <title>System of a Downloader</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/download.png') }}" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="datos">
+                <h1>SE DESCARGÓ:</h1>
+                <div>
+                    <p><b style="color:#fff">Título: </b>{{title}}.</p>
+                    <p><b style="color:#fff">Autor: </b>{{author}}.</p>
+                    <p><b style="color:#fff">Vistas: </b>{{views}}.</p>
+                    <p><b style="color:#fff">Fecha de​ Publicación: </b>{{date}}.</p>
+                    <p><b style="color:#fff">Enlace: </b>{{link}}</p>
+                </div>
+                <button>
+                    <img src="{{ url_for('static', filename='images/back.png') }}" alt="arrow">
+                </button>
+            </divc>
+        </div>
+    </body>
+</html>
